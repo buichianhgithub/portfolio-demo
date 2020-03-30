@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding:0;
+    background: #f1f1f1;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation-bar{
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(241,240,247);
+    background: linear-gradient(90deg, rgb(247, 206, 220) 0%, rgb(255, 211, 223) 50%, rgb(250, 163, 184) 100%, rgba(230,51,95,1) 100%, rgba(0,212,255,1) 100%);
+    z-index: 1;
+}
+
+.nav li:not(:first-child){
+    margin-left: 25px;
+}
+
+.nav li a{
+    font-size: 1.5vw;
+    font-family: serif;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.box-left{
+    flex:1;
+    background: #E84824;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.box-right{
+    flex:1;
+    background: #F5EFEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.responsive-middle-text{
+    vertical-align: middle;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+}
+.responsive-middle-text h1{
+    color: #fff;
+    opacity: 90%;
+    font-family: Pacifico;
+    font-size: 5vw;
+    margin: 0 30px;
+
+}
+
+.my-area{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+
+}
+
+
+.my-image-circle{
+    margin-top: 30px;
+    width: 26vw;
+    height: 26vw;
+    background: url(../assets/myphoto.jpg);
+    background-size: cover;
+    -webkit-background-size:cover ;
+    background-position: center center;
+    -webkit-background-position:center center ;
+    border-radius: 50%;
+}
+
+.my-area p{
+    width: 40vw;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.2vw;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.form-area{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    border: 1px solid rgb(211, 184, 184);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.form-area h1{
+    flex: 1;
+    color:gray ;
+
+}
+
+.contact-form{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: none !important;
+}
+
+.contact-form input,textarea,button{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+.home-container{
+    background:rgb(250, 232, 225);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1{
+    text-align: center;
+    font-family:Pacifico;
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(202, 119, 119), red);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-container p{
+    font-family:Poppins;
+    font-size: 36px;
+    color: rgb(83, 81, 81);
+}
+
+.portfolio-container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  background: rgb(250, 232, 225);
+  height: 100vh;
+}
+
+.portfolio-web-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    background: rgb(250, 232, 225);
+    height: 100vh;
+  }
+
+
+  .box-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+
+}
+
+.img-area{
+    width: 200px;
+    height: 200px;
+    border: solid 5px rgb(254, 208, 208);
+    border-radius: 50%;
+}
+
+.single-box{
+    flex: 1;
+    text-align: center;
+    border: 5px solid rgb(114, 113, 113);
+    height: 80%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.first{
+    background: url(../assets/web.png);
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size:cover;
+}
+.second{
+    background: url(../assets/mobile.png);
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size:cover;
+}
+.third{
+    background: url(../assets/design.png);
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size:cover;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
